@@ -1,0 +1,16 @@
+%*******************************************************
+% Abstract
+%*******************************************************
+%\thispagestyle{empty}
+%\phantomsection 
+\refstepcounter{dummy}
+%\cleardoublepage
+\pdfbookmark[1]{Résumé}{Résumé}
+\chapter*{Abstract}
+
+
+Nowadays, the understanding of granular media and their behaviors is becoming a major issue for industries in several sectors. The scientific community that is particularly interested in the study of these media is not only faced with the complex character of the interactions governing their dynamics, but also with the recurrent and growing need to simulate them. In front of these challenges, tools adapted to model granular dynamics have emerged, mainly grouped under the term of Discrete Element Method (DEM). Granular dynamics is then governed by Newton's second law of motion combined with a regular contact model. Later, other discrete element based strategies have been developed, especially the \textit{Non-Smooth Contact Dynamics} (NSCD) approach, which consists of taking into account the frictional contact interactions collectively during a time step, without using a regularization process, and whose management of the non-smoothr dynamics equations is done through the Non-Linear Gauss-Seidel algorithm (NLGS). The literature is full of numerical methods to solve these equations, but recently, Primal-Dual Active Set (PDAS) methods have emerged as simple to implement and efficient methods to solve these kinds of problems. These methods are based on the following principle: the frictional contact conditions are reformulated in terms of non-linear complementary functions, whose solution is provided by Newton's semi-smooth iterative method. On the basis of these prerequisites, the objective of this thesis work is to provide a generalization of the NSCD-PDAS approach for both elastic and hyperelastic contact problems, as well as for rigid multi-body dynamics ones. Particular attention is paid to the development of an algorithm for solving contact and friction laws in the non-smooth framework of NSCD in granular media. Several numerical experiments are reported for verification and validation purposes, and also to evaluate the efficiency and assess the performances of PDAS methods compared to other numerical methods. Finally, in order to integrate the NSCD-PDAS approach in a pure application framework, the implementation has been carried out in an open source solver, allowing to inherit the massive parallelism, to simulate fluid-granular coupled flows, and to compare the performances with the DEM approach specific to the solver.\\
+
+\newpage
+
+\textbf{Keywords:} Granular media, Deformable media, Discrete Element Method, Non-Smooth Contact Dynamics, Newton's semi-smooth method, Non-Linear Gauss-Seidel iterative solver, Primal-Dual Active Set method, Numerical simulations, Granular flow, Parallelization paradigm, Fluid-particles coupling
